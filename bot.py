@@ -13,7 +13,7 @@ def response_news_api_handler(res, message):
     if not res or type(res) != dict or len(articles) == 0:
         bot.send_message(message.from_user.id, f"Did't find anything with {message.text} title")
 
-    bot.send_message(message.from_user.id, f"Here what i have found 👇")
+    bot.send_message(message.from_user.id, "Here what i have found 👇")
 
     for article in articles:
         bot.send_message(message.from_user.id, '--------------------')
